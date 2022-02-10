@@ -10,6 +10,7 @@ import { TestimonialComponent } from './components/testimonial/testimonial.compo
 import { ServicescardsComponent } from './components/servicescards/servicescards.component';
 import { MapComponent } from './components/map/map.component';
 import { TitleComponent } from './components/title/title.component';
+import { GalleryItemComponent } from './components/gallery/gallery-item/gallery-item.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { TitleComponent } from './components/title/title.component';
     ServicescardsComponent,
     MapComponent,
     TitleComponent,
+    GalleryItemComponent,
   ],
   imports: [
     BrowserModule,

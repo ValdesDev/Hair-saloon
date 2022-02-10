@@ -1,0 +1,35 @@
+@import "../../../../styles/bootstrap/bootstrap.scss";
+@import "../../../../styles/bootstrap/functions";
+@import "../../../../styles/bootstrap/variables";
+@import "../../../../styles/bootstrap/mixins";
+
+.single-portfolio {
+  margin-bottom: 50px;
+  border-radius: 5px;
+  display: block;
+
+  .relative {
+    margin-bottom: 20px;
+  }
+  .p-inner {
+    text-align: center;
+    h4 {
+      font-size: 20px;
+    }
+    .cat {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: lighten($black, 80%);
+    }
+  }
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+

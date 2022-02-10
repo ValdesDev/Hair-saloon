@@ -10,7 +10,7 @@ export class GalleryComponent {
     {
       filter: '*',
       name: 'Todos',
-      active:true,
+      active: true,
     },
     {
       filter: '.packaging',
@@ -27,6 +27,38 @@ export class GalleryComponent {
     {
       filter: '.photography',
       name: 'Belleza',
+    },
+  ];
+  items = [
+    {
+      image: '/assets/images/pelo-color.jpg',
+      title: 'Cobre y rojos',
+      category: 'Color',
+    },
+    {
+      image: '/assets/images/pelo-color.jpg',
+      title: 'Mechas doradas',
+      category: 'Color',
+    },
+    {
+      image: '/assets/images/pelo-color.jpg',
+      title: 'Desfilados',
+      category: 'Corte',
+    },
+    {
+      image: '/assets/images/pelo-color.jpg',
+      title: 'Corte moderno',
+      category: 'Cortes',
+    },
+    {
+      image: '/assets/images/pelo-color.jpg',
+      title: 'Bodas y celebraciones',
+      category: 'Peinado',
+    },
+    {
+      image: '/assets/images/pelo-color.jpg',
+      title: 'Manicura y maquillaje',
+      category: 'Belleza',
     },
   ];
 }
