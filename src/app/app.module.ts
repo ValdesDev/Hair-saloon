@@ -6,6 +6,9 @@ import { LayoutModule } from './components/layout/layout.module';
 import { HeaderComponent } from './components/header/header.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { AboutComponent } from './components/about/about.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { ServicescardsComponent } from './components/servicescards/servicescards.component';
+
 
 @NgModule({
   declarations: [
@@ -13,6 +16,8 @@ import { AboutComponent } from './components/about/about.component';
     HeaderComponent,
     GalleryComponent,
     AboutComponent,
+    TestimonialComponent,
+    ServicescardsComponent,
   ],
   imports: [
     BrowserModule,
