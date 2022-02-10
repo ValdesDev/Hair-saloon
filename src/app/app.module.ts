@@ -8,6 +8,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { AboutComponent } from './components/about/about.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { ServicescardsComponent } from './components/servicescards/servicescards.component';
+import { MapComponent } from './components/map/map.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ServicescardsComponent } from './components/servicescards/servicescards
     AboutComponent,
     TestimonialComponent,
     ServicescardsComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
