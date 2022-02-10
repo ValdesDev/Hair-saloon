@@ -9,6 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { ServicescardsComponent } from './components/servicescards/servicescards.component';
 import { MapComponent } from './components/map/map.component';
+import { TitleComponent } from './components/title/title.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { MapComponent } from './components/map/map.component';
     TestimonialComponent,
     ServicescardsComponent,
     MapComponent,
+    TitleComponent,
   ],
   imports: [
     BrowserModule,
