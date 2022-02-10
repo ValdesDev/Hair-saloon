@@ -1,5 +1,10 @@
-<div class="section-heading site-animate">
-  <h1>
+<div class="section-heading site-animate text-center">
+  <h1 *ngIf="isMainHeading; else h2">
     {{ plainText }} <strong class="d-block">{{ emphasisText }}</strong>
   </h1>
+  <ng-template #h2>
+    <h2>
+      {{ plainText }} <strong>{{ emphasisText }}</strong>
+    </h2>
+  </ng-template>
 </div>

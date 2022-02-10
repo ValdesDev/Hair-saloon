@@ -1,17 +1,21 @@
 <section class="site-section" id="section-portfolio">
   <div class="container">
     <div class="row">
-      <div class="section-heading text-center col-md-12">
-        <h2>Nuestros <strong>Peinados</strong></h2>
-      </div>
+      <app-title
+        class="col-md-12"
+        plainText="Nuestros"
+        emphasisText="Peinados"
+      ></app-title>
     </div>
     <div class="filters">
       <ul>
-        <li class="active" data-filter="*">Todos</li>
-        <li data-filter=".packaging">Cortes</li>
-        <li data-filter=".mockup">Color</li>
-        <li data-filter=".typography">Peinado</li>
-        <li data-filter=".photography">Belleza</li>
+        <li
+          *ngFor="let item of categories"
+          [ngClass]="{ active: item.active }"
+          [attr.data-filter]="item.filter"
+        >
+          {{ item.name }}
+        </li>
       </ul>
     </div>
 
@@ -21,9 +25,13 @@
           <div class="relative">
             <div class="thumb">
               <div class="overlay overlay-bg"></div>
-              <img class="image img-fluid" src="/assets/images/pelo-color.jpg" alt="" />
+              <img
+                class="image img-fluid"
+                src="/assets/images/pelo-color.jpg"
+                alt=""
+              />
             </div>
-            <a href="/assets/images/pelo-color.jpg"class="img-pop-up">
+            <a href="/assets/images/pelo-color.jpg" class="img-pop-up">
               <div class="middle">
                 <div class="text align-self-center d-flex">
                   <img src="/assets/images/pelo-color.jpg" alt="" />
@@ -51,7 +59,7 @@
             </a>
           </div>
           <div class="p-inner">
-            <h4> Otro peinado colorido</h4>
+            <h4>Otro peinado colorido</h4>
             <div class="cat">Color</div>
           </div>
         </div>

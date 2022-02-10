@@ -8,4 +8,5 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TitleComponent {
   @Input() plainText: string = '';
   @Input() emphasisText: string = '';
+  @Input() isMainHeading:boolean= false;
 }
