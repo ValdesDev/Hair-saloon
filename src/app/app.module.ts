@@ -11,6 +11,7 @@ import { ServicescardsComponent } from './components/servicescards/servicescards
 import { MapComponent } from './components/map/map.component';
 import { TitleComponent } from './components/title/title.component';
 import { GalleryItemComponent } from './components/gallery/gallery-item/gallery-item.component';
+import { TestimonialItemComponent } from './components/testimonial/testimonial-item/testimonial-item.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { GalleryItemComponent } from './components/gallery/gallery-item/gallery-
     MapComponent,
     TitleComponent,
     GalleryItemComponent,
+    TestimonialItemComponent,
   ],
   imports: [
     BrowserModule,
