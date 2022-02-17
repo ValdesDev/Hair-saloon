@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class TestimonialComponent {
   testimonials = [
     {
-      image: '/assets/images/pelo-color.jpg',
+      image: '/assets/images/pelo-boda.jpg',
       author: 'Marco Tulio Cicerón',
       opinion:
         'Morbi sit amet sapien a mi ultrices aliquam. Nunc bibendum sem tortor, sagittis sodales tortor mattis ut. Suspendisse venenatis in urna nec tincidunt. Aenean semper finibus risus a tempus. Nunc sed sapien pellentesque, tincidunt odio et, malesuada velit.',
