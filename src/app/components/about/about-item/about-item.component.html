@@ -1,0 +1,28 @@
+<div
+  class="row mb-5 align-items-center"
+  [ngClass]="{ 'inverse-positions': inverse }"
+>
+  <div class="col-lg-7 mb-5 mb-lg-0"
+  [ngClass]="{ 'text-right': inverse }"
+  >
+    <img [src]="image" [alt]="name" class="aboutus-image img-fluid" />
+  </div>
+  <div class="col-lg-5 pl-lg-5">
+    <app-title
+      class="section-heading"
+      [plainText]="titleText"
+      [emphasisText]="name"
+    ></app-title>
+    <p class="lead">
+      {{ presentation }}
+    </p>
+    <p class="mb-5">
+      {{ declaration }}
+    </p>
+    <p>
+      <a [href]="contact" class="btn btn-secondary px-4 py-2 btn-sm"
+        >Pedir cita</a
+      >
+    </p>
+  </div>
+</div>

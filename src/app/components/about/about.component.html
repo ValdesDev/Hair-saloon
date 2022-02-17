@@ -1,60 +1,14 @@
 <section class="site-section" id="section-about">
   <div class="container">
-    <div class="row mb-5 align-items-center">
-      <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
-        <img
-          src="images/image_1.jpg"
-          alt="Image placeholder"
-          class="img-fluid"
-        />
-      </div>
-      <div class="col-lg-5 pl-lg-5">
-        <div class="section-heading">
-          <h2>Sobre <strong>Carla</strong></h2>
-        </div>
-        <p class="lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut
-          feugiat mi. Mauris magna mi, malesuada nec lacinia id, ultricies vel
-          turpis.
-        </p>
-        <p class="mb-5">
-          In at quam molestie, ullamcorper est hendrerit, accumsan lorem. Morbi
-          tincidunt vitae mi quis aliquam. Proin luctus vehicula enim vel
-          condimentum. Quisque a turpis quis nunc consectetur tempor. Sed quis
-          nunc ac orci dapibus molestie. Etiam ut dolor ut ex mattis tincidunt.
-        </p>
-
-        <p>
-          <a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Pedir cita</a>
-        </p>
-      </div>
-    </div>
-    <div class="row mb-5 align-items-center">
-      <div class="col-lg-5 pl-lg-5">
-        <div class="section-heading">
-          <h2>Sobre <strong>Marta</strong></h2>
-        </div>
-        <p class="lead">
-          Fusce et vehicula nulla, ut congue nibh. Curabitur luctus lorem elit,
-          sit amet aliquam ipsum imperdiet et. Nulla bibendum quam ut lectus
-          faucibus, non tristique leo pulvinar.
-        </p>
-        <p class="mb-5">
-          Quisque mattis mauris ipsum, at venenatis arcu tempus at. Nullam elit
-          nisi, tincidunt vitae tincidunt vitae, auctor vel elit.
-        </p>
-
-        <p>
-          <a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Pedir cita</a>
-        </p>
-      </div>
-      <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
-        <img
-          src="images/image_1.jpg"
-          alt="Image placeholder"
-          class="img-fluid"
-        />
-      </div>
-    </div>
+    <app-about-item
+      *ngFor="let worker of workers"
+      [inverse]="workers.indexOf(worker) % 2 !== 0"
+      [image]="worker.image"
+      [titleText]="worker.titleText"
+      [name]="worker.name"
+      [presentation]="worker.presentation"
+      [declaration]="worker.declaration"
+      [contact]="worker.contact"
+    ></app-about-item>
   </div>
 </section>
