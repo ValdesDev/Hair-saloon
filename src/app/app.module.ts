@@ -7,11 +7,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { AboutComponent } from './components/about/about.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
-import { ServicescardsComponent } from './components/servicescards/servicescards.component';
 import { MapComponent } from './components/map/map.component';
 import { TitleComponent } from './components/title/title.component';
 import { GalleryItemComponent } from './components/gallery/gallery-item/gallery-item.component';
 import { TestimonialItemComponent } from './components/testimonial/testimonial-item/testimonial-item.component';
+import { AboutItemComponent } from './components/about/about-item/about-item.component';
+import { ServiceItemComponent } from './components/service-list/service-item/service-item.component';
+import { ServiceListComponent } from './components/service-list/service-list.component';
 
 
 @NgModule({
@@ -21,11 +23,13 @@ import { TestimonialItemComponent } from './components/testimonial/testimonial-i
     GalleryComponent,
     AboutComponent,
     TestimonialComponent,
-    ServicescardsComponent,
+    ServiceListComponent,
     MapComponent,
     TitleComponent,
     GalleryItemComponent,
     TestimonialItemComponent,
+    AboutItemComponent,
+    ServiceItemComponent,
   ],
   imports: [
     BrowserModule,

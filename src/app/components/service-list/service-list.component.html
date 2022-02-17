@@ -1,0 +1,20 @@
+<section class="site-section" id="section-services">
+  <div class="container">
+    <div class="row">
+      <app-title
+        class="col-md-12 mb-5"
+        plainText="Nuestros"
+        emphasisText="Servicios"
+      ></app-title>
+    </div>
+
+    <div class="row">
+      <app-service-item
+        class="col-sm-6 col-lg-4 mb-4"
+        *ngFor="let item of items"
+        [title]="item.title"
+        [subTitle]="item.subTitle"
+      ></app-service-item>
+    </div>
+  </div>
+</section>
