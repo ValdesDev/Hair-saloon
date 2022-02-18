@@ -288,25 +288,6 @@ a {
   }
 }
 
-.site-contact-details {
-  &,
-  li {
-    padding: 0;
-    margin: 0;
-  }
-  li {
-    list-style: none;
-    margin-bottom: 20px;
-    > span {
-      color: #2c3e50;
-      letter-spacing: 0.1em;
-      font-size: 12px;
-      font-weight: 500;
-      margin-bottom: 5px;
-      display: block;
-    }
-  }
-}
 
 .site-footer {
   padding: 3em 0;
