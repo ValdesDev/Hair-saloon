@@ -14,6 +14,10 @@ import { TestimonialItemComponent } from './components/testimonial/testimonial-i
 import { AboutItemComponent } from './components/about/about-item/about-item.component';
 import { ServiceItemComponent } from './components/service-list/service-item/service-item.component';
 import { ServiceListComponent } from './components/service-list/service-list.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ContactAddressComponent } from './components/contact/contact-address/contact-address.component';
+import { ContactMapComponent } from './components/contact/contact-map/contact-map.component';
+
 
 
 @NgModule({
@@ -30,6 +34,9 @@ import { ServiceListComponent } from './components/service-list/service-list.com
     TestimonialItemComponent,
     AboutItemComponent,
     ServiceItemComponent,
+    ContactComponent,
+    ContactAddressComponent,
+    ContactMapComponent,
   ],
   imports: [
     BrowserModule,
