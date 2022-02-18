@@ -1,0 +1,9 @@
+<address class="col-lg-4 col-md-12">
+  <ul class="site-contact-details">
+      <li
+      *ngFor="let dataItem of dataItems">
+        <span class="text-uppercase">{{dataItem.addressDataName}}</span>
+        {{dataItem.addressData}}
+      </li>
+  </ul>
+</address>
